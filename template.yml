@@ -1,0 +1,78 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  cadence-lambda
+  Sample SAM Template for cadence-lambda
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+    Function:
+      Runtime: nodejs12.x
+      Timeout: 180
+      Handler: lambdaHandler
+    # Timeout: 3
+Resources:
+  triggerProcess:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      FunctionName: cadence
+      CodeUri: ./built
+      Handler: app.post
+      Runtime: nodejs12.x
+      Events:
+        createResource:
+          Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /processTrigger
+            Method: post
+  CreateCadenceFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      FunctionName: cadence
+      CodeUri: ./built
+      Handler: app.post
+      Runtime: nodejs12.x
+      Events:
+        createResource:
+          Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            Path: /cadence
+            Method: post
+  GetCadenceListFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      FunctionName: cadence
+      CodeUri: ./built
+      Handler: app.get
+      Runtime: nodejs12.x
+      Events:
+        list:
+          Type: Api
+          Properties:
+            Path: /cadence
+            Method: get
+  UpdateCadenceFunction:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      FunctionName: cadence
+      CodeUri: ./built
+      Handler: app.put
+      Runtime: nodejs12.x
+      Events:
+        update:
+          Type: Api
+          Properties:
+            Path: /cadence
+            Method: put
+Outputs:
+  # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
+  # Find out more about other implicit resources you can reference within SAM
+  # https://github.com/awslabs/serverless-application-model/blob/master/docs/internals/generated_resources.rst#api
+  HelloWorldApi:
+    Description: "API Gateway endpoint URL for Prod stage for Hello World function"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/"
+  CreateCadenceFunction:
+    Description: "Hello World Lambda Function ARN"
+    Value: !GetAtt CreateCadenceFunction.Arn
+  HelloWorldFunctionIamRole:
+    Description: "Implicit IAM Role created for Hello World function"
+    Value: !GetAtt HelloWorldFunctionRole.Arn

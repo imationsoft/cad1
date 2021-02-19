@@ -1,0 +1,14 @@
+{
+    "cadenceId": 1,
+    "businessId": 1,
+    "status": "status",
+    "candenceName": "name",
+    "lastUpdate": "2020-01-01",
+    "eventUrl": "event.com",
+    "checkDnc": 1,
+    "reEnrollment": 1,
+    "useContactOwner": 1,
+    "autoAssignOwner": 1,
+    "version": 12,
+    "queueid": 10
+}

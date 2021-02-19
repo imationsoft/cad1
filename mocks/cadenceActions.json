@@ -1,0 +1,16 @@
+{
+    "cadenceId": 1,
+    "cadenceActionId": 1,
+    "status": "test",
+    "actionIndex": 1,
+    "type": "test",
+    "durationFromLastAction": 1,
+    "durationGrouping": "2020-01-01",
+    "calculatedDuration": 1,
+    "retryCall": 0,
+    "maxRetries": 1,
+    "callRetryIn": 100,
+    "retryGrouping": "2020-01-01",
+    "smsTemplatedId": 1,
+    "smsMessage": "Message"
+}

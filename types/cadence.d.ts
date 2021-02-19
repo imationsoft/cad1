@@ -1,0 +1,20 @@
+// model to create cadence main object
+interface ICadence {
+    cadenceId?: number,
+    businessId: number,
+    status: string,
+    cadenceName: string,
+    lastUpdate: string,
+    eventUrl: string,
+    checkDnc: number,
+    reEnrollment: number,
+    useContactOwner: number,
+    autoAssignOwner: number,
+    version: number,
+    queueid: number,
+    cadenceHours: Array<ICadenceHours>,
+    targetHours: Array<ICadenceHours>,
+    cadenceActions: Array<ICadenceAction>,
+    cadenceDispositionRules?: Array<ICadenceDispositionRule>,
+    cadenceHarrassmentPolicies?: Array<ICadenceHarrasmentPolicy>,
+}

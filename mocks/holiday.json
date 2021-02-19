@@ -1,0 +1,8 @@
+{
+    "holidayId": 1,
+    "businessId": 1,
+    "name": "name",
+    "date": "2020-01-01",
+    "startTime": "10:00 pm",
+    "endTime": "10:00 pm"
+}

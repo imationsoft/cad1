@@ -1,0 +1,9 @@
+{
+    "cadenceHarrassmentPolicyId": 1,
+    "channel": "sms",
+    "frequency": 2,
+    "durationCount": 2,
+    "durationGrouping": "2020-01-01",
+    "calculatedDuration": 10,
+    "cadenceId": 1
+}

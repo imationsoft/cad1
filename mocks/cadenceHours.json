@@ -1,0 +1,36 @@
+{
+    "cadenceHoursId": 1,
+    "cadenceId": 1,
+    "type": "business",
+    "dayOfWeek": 1,
+    "startTime": "08:00:00",
+    "endTime": "17:00:00"
+}, {
+    "cadenceHoursId": 1,
+    "cadenceId": 1,
+    "type": "business",
+    "dayOfWeek": 2,
+    "startTime": "09:00:00",
+    "endTime": "17:00:00"
+}, {
+    "cadenceHoursId": 1,
+    "cadenceId": 1,
+    "type": "business",
+    "dayOfWeek": 3,
+    "startTime": "10:00:00",
+    "endTime": "17:00:00"
+}, {
+    "cadenceHoursId": 1,
+    "cadenceId": 1,
+    "type": "business",
+    "dayOfWeek": 4,
+    "startTime": "11:00:00",
+    "endTime": "17:00:00"
+}, {
+    "cadenceHoursId": 1,
+    "cadenceId": 1,
+    "type": "business",
+    "dayOfWeek": 5,
+    "startTime": "12:00:00",
+    "endTime": "17:00:00"
+}

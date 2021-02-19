@@ -1,0 +1,107 @@
+{
+    "cadenceHours": [
+        {
+            "cadenceHoursId": 1,
+            "cadenceId": 1,
+            "type": "business",
+            "dayOfWeek": 1,
+            "startTime": "08:00:00",
+            "endTime": "17:00:00"
+        },
+        {
+            "cadenceHoursId": 2,
+            "cadenceId": 1,
+            "type": "business",
+            "dayOfWeek": 2,
+            "startTime": "09:00:00",
+            "endTime": "17:00:00"
+        },
+        {
+            "cadenceHoursId": 3,
+            "cadenceId": 1,
+            "type": "business",
+            "dayOfWeek": 3,
+            "startTime": "10:00:00",
+            "endTime": "17:00:00"
+        },
+        {
+            "cadenceHoursId": 4,
+            "cadenceId": 1,
+            "type": "business",
+            "dayOfWeek": 4,
+            "startTime": "11:00:00",
+            "endTime": "17:00:00"
+        },
+        {
+            "cadenceHoursId": 5,
+            "cadenceId": 1,
+            "type": "business",
+            "dayOfWeek": 5,
+            "startTime": "12:00:00",
+            "endTime": "17:00:00"
+        }
+    ],
+    "holiday": [
+        {
+            "holidayId": 1,
+            "businessId": 1,
+            "name": "name",
+            "date": "2021-01-28",
+            "startTime": "09:00:00",
+            "endTime": "17:00:00"
+        },
+        {
+            "holidayId": 1,
+            "businessId": 1,
+            "name": "name",
+            "date": "2021-01-29",
+            "startTime": "09:00:00",
+            "endTime": "17:00:00"
+        }
+    ],
+    "targetHours": [
+        {
+            "targetHourId": 1,
+            "cadenceId": 1,
+            "type": "target",
+            "dayOfWeek": 1,
+            "startTime": "08:00:00",
+            "endTime": "17:00:00"
+        },
+        {
+            "targetHourId": 1,
+            "cadenceId": 1,
+            "type": "target",
+            "dayOfWeek": 2,
+            "startTime": "09:00:00",
+            "endTime": "17:00:00"
+        },
+        {
+            "targetHourId": 1,
+            "cadenceId": 1,
+            "type": "target",
+            "dayOfWeek": 3,
+            "startTime": "10:00:00",
+            "endTime": "17:00:00"
+        },
+        {
+            "targetHourId": 1,
+            "cadenceId": 1,
+            "type": "target",
+            "dayOfWeek": 4,
+            "startTime": "11:00:00",
+            "endTime": "17:00:00"
+        },
+        {
+            "targetHourId": 1,
+            "cadenceId": 1,
+            "type": "target",
+            "dayOfWeek": 5,
+            "startTime": "12:00:00",
+            "endTime": "17:00:00"
+        }
+    ],
+    "startTime": "2021-01-28 15:00:00",
+    "targetTimeZone": "America/New_York",
+    "businessTimeZone": "America/New_York"
+}
